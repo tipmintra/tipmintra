@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webleb</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="form_validation.js"></script>
+</head>
+<body style="display:flex; align-items:center; justify-content:center;">
+<div class="login-page">
+  <div class="form">
+    <form class="register-form" name='registration' method="POST" onSubmit="return formValidation();">
+        <h2 >Register</h2>
+        <input type="text" placeholder="User id *" name="userid" required/>
+        <input type="password" placeholder="Password *" name="passid" required/>
+        <input type="text" placeholder="Name *" name="username" required/>
+        <input type="text" placeholder="Address *" name="address" required/>
+        <section placeholder="Country *" name="country" required></section>
+    
+        
+        
+        <input type="text" placeholder="Zip Code*" name="zip" required/>
+        <input type="text" placeholder="Email *" name="email" required/>
+        
+        
+        
+        
+
+            <div class="radio-group">
+                <input id="male" class="radio-group__option" type="radio" name="sex" checked="checked">
+                <label class="radio-group__label" for="male">
+                    Male
+                </label>
+                
+                <input id="female" class="radio-group__option" type="radio" name="sex">
+                <label class="radio-group__label" for="female">
+                    Female
+                </label>
+              </div>
+            <br>
+              <div class="radio-group">
+                <input id="english" class="radio-group__option" type="radio" name="en" checked="checked">
+                <label class="radio-group__label" for="english">
+                    English
+                </label>
+                
+                <input id="non" class="radio-group__option" type="radio" name="en">
+                <label class="radio-group__label" for="non">
+                    Non English
+                </label>
+              </div><br>
+              <select name="country">
+                <option selected="" value="Default">(Please select a country)</option>
+                <option value="AF">Australia</option>
+                <option value="AL">Canada</option>
+                <option value="DZ">India</option>
+                <option value="AS">Russia</option>
+                <option value="AD">USA</option>
+                </select>
+
+    
+        
+        
+        <input type="text" placeholder="About" name="desc" />
+        
+
+      
+      <a class="btn" href="#">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <div class="sub">
+            <input type="submit" name="submit" value="Submit" />
+        </div>
+      </a>
+      
+      <p class="message">Already registered? <a href="login.html">Sign In</a></p>
+    </form>
+  </div>
+</div>
+</body>
+</html>
+
